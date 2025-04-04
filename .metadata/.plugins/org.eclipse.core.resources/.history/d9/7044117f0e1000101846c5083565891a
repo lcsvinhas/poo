@@ -1,0 +1,23 @@
+package exercicios;
+
+public class Pessoa {
+	int id;
+	String nome;
+	double peso, altura;
+
+	public double calcularIMC() {
+		return peso / (altura * altura);
+	}
+	public String resultado() {
+		//Se o resultado for < 18.5 - Abaixo do peso
+		//Se o resultado for entre 18.5 e 24.9 - Peso ideal
+		//Acima do peso
+		
+		if (calcularIMC() < 18.5) {
+			return "Abaixo do peso"
+		} else if (calcularIMC() < 24.9){
+			return "Peso ideal"
+			
+		}
+	}
+}

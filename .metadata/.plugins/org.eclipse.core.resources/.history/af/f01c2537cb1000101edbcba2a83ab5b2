@@ -1,0 +1,29 @@
+package aula;
+
+public class Produto {
+	private String descricao;
+	private double valor;
+	private int quantidade;
+	
+	public Produto(String descricao, double valor, int quantidade) {
+		this.descricao = descricao;
+		this.valor = valor;
+		this.quantidade = quantidade;
+	}
+	
+	public double calcularIcms() {
+		return this.valor * .12;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public int getQuantidade() {
+		return quantidade;
+	}
+}

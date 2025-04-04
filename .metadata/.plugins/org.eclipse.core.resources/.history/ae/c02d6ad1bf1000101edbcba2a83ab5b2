@@ -1,0 +1,11 @@
+package aula;
+
+public class TesteMedico {
+
+	public static void main(String[] args) {
+		Medico m1 = new Medico('12345', 'Ana Maria', 0, 250);
+		
+
+	}
+
+}

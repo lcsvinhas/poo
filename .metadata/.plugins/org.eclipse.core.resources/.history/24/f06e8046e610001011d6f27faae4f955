@@ -1,0 +1,16 @@
+package br.com.serratec.heranca;
+
+public class TesteEmpregado {
+
+	public static void main(String[] args) {
+		Gerente gerente = new Gerente("Carla", "c@gmail.com", "2222", 5500.,10);
+		Diretor diretor = new Diretor("Carlos", "ca@gmail.com", "233", 9000., "ADM");
+
+		System.out.println(gerente.getNome() + " - " + gerente.getEmail());
+		System.out.println(gerente.getNumEmpregadoGerenciados());
+		gerente.aumentarSalario(10.);
+
+		System.out.println("Novo salário: R$" + gerente.getSalario());
+
+	}
+}

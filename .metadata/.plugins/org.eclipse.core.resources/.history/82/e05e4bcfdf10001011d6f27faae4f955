@@ -1,0 +1,15 @@
+package br.com.serratec.heranca;
+
+public class Gerente extends Empregado {
+	private Integer numEmpregadoGerenciados;
+
+	public Gerente(String nome, String email, String telefone, Integer numEmpregadoGerenciados) {
+		super(nome, email, telefone);
+		this.numEmpregadoGerenciados = numEmpregadoGerenciados;
+	}
+
+	public Integer getNumEmpregadoGerenciados() {
+		return numEmpregadoGerenciados;
+	}
+
+}
