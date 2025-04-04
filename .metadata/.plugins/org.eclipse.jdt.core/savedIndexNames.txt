@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+G:\Meu Drive\serratec\residencia-tic-software\aulas-tecnicas\poo\.metadata\.plugins\org.eclipse.jdt.core
-3351338590.index
-1590169572.index
-1865797976.index

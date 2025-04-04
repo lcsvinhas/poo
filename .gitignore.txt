@@ -28,5 +28,6 @@ out/
 .project
 .classpath
 .settings/
+.metadata/
 bin/
 tmp/
