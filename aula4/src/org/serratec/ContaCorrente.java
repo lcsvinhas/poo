@@ -1,5 +1,7 @@
 package org.serratec;
 
+import org.serratec.exception.ContaCorrenteException;
+
 public class ContaCorrente implements Conta {
     private String titular;
     private Double saldo;
@@ -34,21 +36,21 @@ public class ContaCorrente implements Conta {
 
     @Override
     public Boolean saque(Double valor) {
-        if(saldo >= valor){
+        if (saldo >= valor) {
             saldo -= valor;
             contadorSaque++;
             return true;
         }
-        return false;
+        throw new ContaCorrenteException("Saldo insuficiente!");
     }
 
     @Override
     public void deposito(Double valor) {
-        if(valor > 0){
+        if (valor > 0) {
             saldo += valor;
             contadorDeposito++;
-        }else {
-            System.out.println("Valor deve ser maior que zero");
+        }else{
+            throw new ContaCorrenteException("Depósito deve ser maior que zero!");
         }
     }
 }
