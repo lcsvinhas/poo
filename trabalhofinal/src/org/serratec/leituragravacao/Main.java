@@ -117,8 +117,11 @@ public class Main {
                 pw.println(linha);
             }
 
+            System.out.print("Digite o caminho do arquivo rejeitados: ");
+            String caminho = sc.next();
+
             if (!rejeitados.isEmpty()) {
-                FileWriter fwr = new FileWriter("C:/Users/lvinh/Desktop/rejeitados.csv");
+                FileWriter fwr = new FileWriter(caminho);
                 PrintWriter pwr = new PrintWriter(fwr);
 
                 for (String rejeitado : rejeitados) {
@@ -126,6 +129,8 @@ public class Main {
                 }
                 pwr.close();
                 System.out.println("Arquivo gerado com nomes rejeitados");
+            }else {
+                System.out.println("Nenhum registro rejeitado");
             }
 
             pw.close();
