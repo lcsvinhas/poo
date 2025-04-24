@@ -2,7 +2,7 @@ package org.serratec.modelo;
 
 import java.time.LocalDate;
 
-public abstract class Pessoa {
+public abstract class Pessoa{
     protected Integer id;
     protected String nome;
     protected String cpf;
